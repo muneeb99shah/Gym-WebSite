@@ -1,0 +1,67 @@
+.store-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.online-store-section {
+    padding-bottom: 7rem;
+}
+
+.carImg {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    background-color: #f7f7f7;
+    transition: all ease .31s;
+    min-height: 300px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-item {
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-text-warp {
+    text-align: left;
+    padding: 2rem 0;
+}
+
+.card-text-warp h3 {
+    font-size: .9rem;
+    padding-bottom: 20px;
+}
+
+.card-text-warp h3:hover {
+    color: #ff0336;
+    transition: all 1s ease;
+}
+
+.card-text-warp span {
+    display: block;
+}
+
+.card-text-warp span i {
+    padding-bottom: 1rem;
+    color: #ffd900;
+}
+
+.price-tags {
+    font-size: 18px;
+    color: #ff0336;
+    font-weight: bold;
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    .store-item {
+        flex: 0 1 250px;
+    }
+}

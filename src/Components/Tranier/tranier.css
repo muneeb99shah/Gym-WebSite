@@ -1,0 +1,35 @@
+.tranier-section {
+    background-image: url(../../assets/images/shape-94.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -6.1%;
+    padding-bottom: 150px;
+}
+
+.tranier-container {
+    background-image: url(../../assets/images/brand-1.png);
+    background-repeat: no-repeat;
+    background-position-x: 104%;
+    background-position-y: 0rem;
+    background-size: 33%;
+}
+
+/* .heading-title {
+    text-align: center;
+    padding-top: 251px;
+}
+
+.title-container h2 {
+    color: white;
+    font-size: 36px;
+}
+
+.heading-title p {
+    color: white;
+    font-size: 16px;
+    padding: 10px 0px;
+    width: 30%;
+    margin: auto;
+    line-height: 1.7;
+} */

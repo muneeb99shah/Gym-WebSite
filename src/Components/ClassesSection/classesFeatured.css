@@ -1,0 +1,136 @@
+.ClassesFeatured-section {
+    background-image: url("../../assets/images/shape-17.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+}
+
+.classes-card-content {
+    position: relative;
+}
+
+.classes-card-content::before {
+    content: "";
+    width: 200px;
+    height: 350px;
+    background-color: #e8e8e8;
+    position: absolute;
+    left: 8rem;
+    top: 1.5rem;
+    /* clip-path: polygon(25% 0%, 80% 0%, 100% 50%, 83% 100%, 25% 100%, 0% 50%); */
+    clip-path: polygon(0% 0%, 70% 0.5%, 100% 50%, 70.5% 99.8%, 0% 100%, 0% 50%);
+    transition: all .4s ease-in-out;
+}
+
+.classesCardFeatured {
+    margin: 3rem 0;
+}
+
+.class-thumbnail img {
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    filter: grayscale(100%);
+}
+
+.class-box-content {
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 1px 51px rgba(104, 100, 100, 0.14);
+    clip-path: polygon(0% 0%, 70% 0.5%, 100% 50%, 70.5% 99.8%, 0% 100%, 0% 50%);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.class-content {
+    position: absolute;
+    text-align: center;
+}
+
+.class-content p {
+    padding: 10px 20px;
+}
+
+.class-icon img {
+    position: absolute;
+    z-index: 5;
+    background: #646464;
+    width: 30%;
+    border-radius: 50%;
+    padding: 20px;
+    left: -3rem;
+    top: -3rem;
+}
+
+.classes-card-content:hover .class-icon img {
+    background-color: #ff0336;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 4rem;
+}
+
+.classes-card-content:hover::before {
+    background-color: #ff0336;
+    transition: all .4s;
+}
+
+.classes-card-content:hover .class-thumbnail img {
+    visibility: visible;
+    transition: all .4s;
+}
+
+.class-title {
+    font-size: 24px;
+    color: #646464;
+}
+
+.class-description {
+    font-size: 18px;
+    color: #646464;
+}
+
+.classes-card-content:hover .class-title {
+    color: #fff;
+}
+
+.classes-card-content:hover .class-description {
+    color: #fff;
+}
+
+@media (max-width:700px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    /* .ClassesFeatured-section {
+        margin: 60rem 0 0 0;
+    } */
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .heading-title p {
+        font-size: 24px;
+        padding: 10px 29px;
+        width: 100%;
+    }
+    .ClassesFeatured-section {
+        margin-top: 13rem;
+    }
+}

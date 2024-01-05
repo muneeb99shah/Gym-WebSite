@@ -1,0 +1,105 @@
+.tean-section {
+  /* padding: 31px 0; */
+  background-image: url(../../assets/images/Shape.png);
+  background-position: center;
+  background-position-x: 30%;
+  background-repeat: no-repeat;
+  background-size: 16%;
+  /* z-index: 100 !important; */
+}
+
+.team-guid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: -90px;
+  z-index: 60;
+}
+
+.team-guid::after {
+  content: "";
+  position: absolute;
+  background-color: #ff0336;
+  width: 72%;
+  padding: 100px 0;
+  z-index: -2;
+  clip-path: polygon(0% 0, 100% 0%, 89% 100%, 0 100%);
+}
+
+.call-to-action-box {
+  width: 50%;
+  position: relative;
+  margin-left: 59px;
+}
+
+.action-text {
+  width: 75%;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  left: 9rem;
+  top: 2rem;
+}
+
+.action-btn {
+  margin-left: -2%;
+  margin-bottom: 2.5rem;
+  background-color: white;
+  padding: 13px 30px;
+}
+
+.action-btn a {
+  color: black;
+}
+
+.red-shap-img img {
+  height: 200px;
+  margin-left: 224px;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .team-guid::after {
+    width: 100%;
+    clip-path: none;
+    overflow: hidden;
+  }
+  .team-guid {
+    justify-content: space-around;
+  }
+  .call-to-action-box {
+    width: 53%;
+    margin-left: 0px;
+  }
+  .red-shap-img,
+  .call-to-action-box img {
+    display: none;
+  }
+  .action-text {
+    width: 100%;
+    position: absolute;
+    top: -4rem;
+    left: -1rem;
+  }
+  .action-text {
+    left: 0rem;
+    top: -31px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .action-text {
+    left: 2rem;
+    font-size: 27px;
+  }
+  .action-btn {
+    margin-left: -8%;
+  }
+  .hero-title {
+    font-size: 43px;
+  }
+  .about-container {
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+    gap: 25px;
+  }
+}

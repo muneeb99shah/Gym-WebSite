@@ -1,0 +1,24 @@
+.brandlogo-section {
+    padding: 50px 0;
+}
+
+.logo-container {
+    padding: 100px 0;
+}
+
+.log-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-items img {
+    margin-right: 30px;
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    .logo-items {
+        flex: 0 1 300px;
+    }
+}

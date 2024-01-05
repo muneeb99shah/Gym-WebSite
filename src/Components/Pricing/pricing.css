@@ -1,0 +1,71 @@
+.pricing-section {
+    background-image: url("../../assets/images/shape-5.png");
+    background-repeat: no-repeat;
+    background-position-x: 83rem;
+    background-size: 19rem;
+    background-position-y: 31rem;
+    padding: 0 0 120px 0;
+}
+
+.pricing-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-card-container {
+    margin-top: 16px;
+}
+
+.pricing-card {
+    background: #efefef;
+    padding: 27px 14px;
+    z-index: 2;
+}
+
+.title-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-icon img {
+    width: 60px;
+}
+
+.price-features ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+.price-features ul li i {
+    margin-right: 15px;
+    background: none;
+    box-shadow: none;
+}
+
+.price-tag {
+    font-size: 30px;
+    position: relative;
+    left: 2rem;
+}
+
+.price-tag h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #000;
+    /* margin-bottom: 0; */
+}
+
+.price-tag sub {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    color: #646464;
+    position: absolute;
+    top: 0.8rem;
+    left: 3rem;
+}

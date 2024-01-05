@@ -1,0 +1,188 @@
+.contactUS-section {
+    background-image: url("../../assets/images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+
+.contact-detail {
+    grid-area: 1/2;
+    /* width: 75%; */
+    width: 100%;
+}
+
+.form-container {
+    grid-area: 1/3;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.info {
+    flex: 0 1 250px;
+    position: relative;
+}
+
+.info::before {
+    content: "";
+    background-color: #ff0336;
+    width: 25%;
+    height: 3%;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+}
+
+.info span {
+    display: block;
+}
+
+form {
+    padding: 30px 50px 50px 45px;
+    height: 60%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 4px 3px 7px lightgrey;
+}
+
+.contact-detail {}
+
+.contact-detail h2 {
+    font-size: 40px;
+    color: #000;
+    line-height: 44px;
+}
+
+.contact-detail p {
+    margin: 35px 0px 20px 0px;
+    font-size: 18px;
+}
+
+.tranier-input {
+    font-size: 14px;
+    color: #000;
+    padding: 12px 20px;
+    height: 51px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+
+.form-title {
+    position: relative;
+}
+
+.form-title::after {
+    content: "";
+    background-color: #ff0336;
+    width: 45%;
+    height: 4%;
+    position: absolute;
+    top: 2.5rem;
+}
+
+.tranier-input-form {
+    padding-bottom: 20px;
+}
+
+.form-title h2 {
+    font-size: 28px;
+    padding-bottom: 2rem;
+}
+
+.info-icons i:hover {
+    color: #ff0336;
+}
+
+.info span,
+.contact-detail h2,
+.contact-detail p,
+.info h3,
+.info-icons i {
+    color: #fff;
+}
+
+@media (max-width:700px) {
+    .contactUS-section {
+        height: 100%;
+        margin-bottom: 5rem;
+    }
+    .contact-container {
+        display: block;
+    }
+    .contact-detail {
+        width: 100%;
+        padding: 10px 22px;
+        text-align: center;
+    }
+    .contact-detail h2 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .contact-info-container {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .info::before {
+        left: 6rem;
+    }
+    form {
+        border-radius: 0;
+    }
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    .contactUS-section {
+        height: 100%;
+    }
+    .contact-container {
+        display: block;
+    }
+    .contact-detail {
+        width: 100%;
+        padding: 10px 22px;
+        text-align: center;
+    }
+    .contact-detail h2 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .contact-info-container {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .info::before {
+        left: 6rem;
+    }
+}
+
+/* .contact-info-container:nth-child(2) {
+    width: 20px;
+} */
+
+@media (min-width:1400px) {}
